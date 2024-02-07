@@ -1,0 +1,24 @@
+
+
+buildscript {
+    ext.enable_asan = false
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath libs.tools.build.gradle
+        classpath libs.kotlin.gradle.plugin
+        classpath libs.dokka.gradle.plugin
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io/" }
+        mavenLocal()
+    }
+}

@@ -1,0 +1,9 @@
+name: build dist
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-dist:
+    uses: atsushieno/aap-juce/.github/workflows/build-dist-with-cmake.yml@main
